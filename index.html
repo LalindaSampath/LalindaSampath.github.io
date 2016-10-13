@@ -154,11 +154,11 @@
         </div>
         <div class="article-info profile-block">
             <div class="article-info-block">
-                2
+                3
                 <span>posts</span>
             </div>
             <div class="article-info-block">
-                2
+                4
                 <span>tags</span>
             </div>
         </div>
@@ -207,6 +207,143 @@
 
             
             <section id="main">
+    <article id="post-Is-node-js-a-replacement-for-php" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+            <header class="article-header">
+                
+    
+        <h1 itemprop="name">
+            <a class="article-title" href="/2016/10/13/Is-node-js-a-replacement-for-php/">Is node.js a replacement for php</a>
+        </h1>
+    
+
+                
+                    <div class="article-meta">
+                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/2016/10/13/Is-node-js-a-replacement-for-php/">
+            <time datetime="2016-10-13T17:27:56.000Z" itemprop="datePublished">2016-10-13</time>
+        </a>
+    </div>
+
+
+                        
+    <div class="article-category">
+    	<i class="fa fa-folder"></i>
+        <a class="article-category-link" href="/categories/Software-Engineering/">Software Engineering</a>
+    </div>
+
+                        
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="/tags/NodeJS/">NodeJS</a>, <a class="tag-link" href="/tags/PHP/">PHP</a>, <a class="tag-link" href="/tags/UI-Development/">UI Development</a>
+    </div>
+
+                    </div>
+                
+            </header>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+            
+            <p>Few years ago partnership between javascript and php was simple. Javascript handled most of the client side tasks and php handled all the server-side tasks. Then Ryan Dahl and other developers working at Joyent discovered they could get JavaScript running on the server-side, which is a open-source runtime system built on Chrome’s V8 JavaScript engine. Node.js is popular for building real-time web APIs. </p>
+<p>###Where PHP wins:<br>– The most popular platforms for building web sites such as wordpress, Joomla and drupal are written in PHP, and those are open-source.<br>– Many templates available in web are written in PHP. You only need to modify and use it to cater our needs.<br>– Simplicity and easy to code. No compilers, no deployments, no JAR files or preprocessors, just your code editor and some php files.<br>– PHP was built to exist with MySQL. If MySQL isn’t your preference you can choose any DBMS technologies from ORACLE to Microsoft.</p>
+<p>###Where Node.js wins:<br>    From all the homework I’ve been doing in the last few days, I figured out the following information.<br>– very good when you need to do several things at the same time (Multitasking)<br>– event-based, so all the wonderful Ajax-like stuff can be done on the server side<br>– lets us share code between the browser and the backend<br>– Especially suited for real-time applications. Using a technique known as “long-polling”, you can write an application that sends updates to the user in real time. This means you can create a browser-based chat application in Node.js that takes almost no system resources to serve a great many clients.<br>It’s worth mentioning that Ruby and Python both have tools to do this sort of thing , but that Node.js does it exceptionally well.When you use something like Node.js, the server has no need of maintaining separate threads for each open connection.<br>– NPM: The Node Package Manager<br>NPM is very similar to Ruby gems, a set of publicly available, reusable components, available through easy installation via an online repository. All the details of package modules can be found on the NPM website, <a href="https://npmjs.org/" target="_blank" rel="external">https://npmjs.org/</a><br> There are tons of really useful packages out there, available to all<br>– Popularity of MEAN Stack<br>The acronym <code>MEAN</code> stands for ‘MongoDB ExpressJS AngularJS NodeJS’.<br>The major benefit of the MEAN stack is that it’s extremely quick to prototype with. Node.js allows you to use Javascript on the backend as well as the frontend which can save you from having to learn a separate language. In addition, the NoSQL nature of MongoDB allows you to quickly change and alter the data layer without having to worry about migrations.</p>
+<p>###Where Node.JS should be used?<br>– Chat<br>    Chat is the most real-time, multi-user application.<br>– API on top of an Object DB<br>    Can be used to extract data from Object DBs such as MongoDB.<br>– Queued Inputs<br>When the server receiving high amount of concurrent data, your DB might be ran into problems. But Node.js can easily handle the concurrent connections themselves.<br>– Data Streaming<br>– PROXY<br>Node.js is easily employed as a server-side proxy where it can handle a large amount of simultaneous connections in a non-blocking manner</p>
+<p>###Where Node.JS should not be used?<br>– SERVER-SIDE WEB APPLICATION W/ A RELATIONAL DB BEHIND<br>Relational DB tools for Node.js are still in their early stages, not mature yet.<br>– HEAVY SERVER-SIDE COMPUTATION/PROCESSING</p>
+<p>###Conclusion<br>Of course, the ending of Node.JS isn’t written yet, as well as PHP.<br>Remember that Node.js was never created to solve the compute scaling problem. It was created to solve the I/O scaling problem, which it does really well.<br>For every coder talking about the purity of Node.js and the simplicity of JavaScript everywhere, there’s another who’s happy with the deep code base and long-understood stability of PHP. </p>
+
+        
+        </div>
+        <footer class="article-footer">
+            <div class="share-container">
+
+
+
+</div>
+
+    <a data-url="http://yoursite.com/2016/10/13/Is-node-js-a-replacement-for-php/" data-id="ciu8md2ss00008opv36hiteuj" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+<script>
+    (function ($) {
+        // Prevent duplicate binding
+        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+            __SHARE_BUTTON_BINDED__ = true;
+        } else {
+            return;
+        }
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+            
+    
+        <a href="http://yoursite.com/2016/10/13/Is-node-js-a-replacement-for-php/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://yoursite.com/2016/10/13/Is-node-js-a-replacement-for-php/">Comments</a>
+    
+
+        </footer>
+    </div>
+    
+</article>
+
+
+
     <article id="post-Media-Queries-in-Responsive-Web-Design" class="article article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
@@ -267,7 +404,7 @@
 
 </div>
 
-    <a data-url="http://yoursite.com/2016/10/09/Media-Queries-in-Responsive-Web-Design/" data-id="ciu7978450000f4pvb5jxf3dd" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="http://yoursite.com/2016/10/09/Media-Queries-in-Responsive-Web-Design/" data-id="ciu8md2tn00018opvk3tm0p4n" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -402,7 +539,7 @@
 
 </div>
 
-    <a data-url="http://yoursite.com/2016/10/08/The-Battle-of-User-Experience-vs-Customer-Experience-UX-vs-CX/" data-id="ciu79784w0001f4pvg2vub5nu" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="http://yoursite.com/2016/10/08/The-Battle-of-User-Experience-vs-Customer-Experience-UX-vs-CX/" data-id="ciu8md2zi00068opvtmgahs53" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -492,6 +629,25 @@
                     <li>
                         
                         <div class="item-thumbnail">
+                            <a href="/2016/10/13/Is-node-js-a-replacement-for-php/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/Software-Engineering/">Software Engineering</a></p>
+                            <p class="item-title"><a href="/2016/10/13/Is-node-js-a-replacement-for-php/" class="title">Is node.js a replacement for php</a></p>
+                            <p class="item-date"><time datetime="2016-10-13T17:27:56.000Z" itemprop="datePublished">2016-10-13</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
                             <a href="/2016/10/09/Media-Queries-in-Responsive-Web-Design/" class="thumbnail">
     
     
@@ -536,7 +692,7 @@
     <div class="widget-wrap">
         <h3 class="widget-title">categories</h3>
         <div class="widget">
-            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Software-Engineering/">Software Engineering</a><span class="category-list-count">2</span></li></ul>
+            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Software-Engineering/">Software Engineering</a><span class="category-list-count">3</span></li></ul>
         </div>
     </div>
 
@@ -545,7 +701,7 @@
     <div class="widget-wrap">
         <h3 class="widget-title">archives</h3>
         <div class="widget">
-            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/10/">October 2016</a><span class="archive-list-count">2</span></li></ul>
+            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/10/">October 2016</a><span class="archive-list-count">3</span></li></ul>
         </div>
     </div>
 
@@ -554,7 +710,7 @@
     <div class="widget-wrap">
         <h3 class="widget-title">tags</h3>
         <div class="widget">
-            <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/UI-Development/">UI Development</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/UX/">UX</a><span class="tag-list-count">1</span></li></ul>
+            <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/NodeJS/">NodeJS</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/PHP/">PHP</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/UI-Development/">UI Development</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/UX/">UX</a><span class="tag-list-count">1</span></li></ul>
         </div>
     </div>
 
@@ -563,7 +719,7 @@
     <div class="widget-wrap">
         <h3 class="widget-title">tag cloud</h3>
         <div class="widget tagcloud">
-            <a href="/tags/UI-Development/" style="font-size: 10px;">UI Development</a> <a href="/tags/UX/" style="font-size: 10px;">UX</a>
+            <a href="/tags/NodeJS/" style="font-size: 10px;">NodeJS</a> <a href="/tags/PHP/" style="font-size: 10px;">PHP</a> <a href="/tags/UI-Development/" style="font-size: 20px;">UI Development</a> <a href="/tags/UX/" style="font-size: 10px;">UX</a>
         </div>
     </div>
 
